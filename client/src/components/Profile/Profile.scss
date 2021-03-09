@@ -1,0 +1,14 @@
+.profile_img {
+  cursor: pointer;
+  line-height: 1 !important;
+  width: 200px;
+  height: 200px;
+}
+
+.profile_img:hover {
+  opacity: 0.5;
+}
+
+.imageUpload > input {
+  display: none;
+}

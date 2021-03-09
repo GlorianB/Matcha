@@ -1,0 +1,71 @@
+.userprofile {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.userprofile * {
+  margin-top: 1em;
+}
+
+.tags__section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions__section {
+  margin-bottom: 1em;
+}
+
+.tag {
+  margin: auto 1em 2em 1em;
+}
+
+
+.like__icon {
+  color: black;
+}
+
+.like__icon--activated {
+  color: #C0392B;
+}
+
+.like__icon:hover {
+  cursor: pointer;
+  color: #C0392B;
+}
+
+.like__icon--activated:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.block__icon {
+  color: black;
+}
+
+.block__icon--activated {
+  color: #C0392B;
+}
+
+.block__icon:hover {
+  cursor: pointer;
+  color: #C0392B;
+}
+
+.block__icon--activated:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.flag__icon:hover {
+  cursor: pointer;
+  color: #C0392B;
+}
+
+.consultContainer {
+  margin-bottom: 1em;
+}

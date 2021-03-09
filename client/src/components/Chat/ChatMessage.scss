@@ -1,0 +1,57 @@
+$otherBackground : #ebebeb none repeat scroll 0 0;
+$userColor : #05728f none repeat scroll 0 0;
+
+.message__body {
+  margin-top: 1em;
+  margin-left: 110px;
+  position: relative;
+
+  %message__content {
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 3px;
+    width: fit-content;
+  }
+
+  .message__content--other {
+    @extend %message__content;
+    background: $otherBackground;
+    color: #646464;
+  }
+
+  .message__content--user {
+    @extend %message__content;
+    background: $userColor;
+    color: white;
+
+  }
+
+  .message__date {
+    color: #747474;
+    margin-top: 20px;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .message__image {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -70%);
+    left: -80px;
+  }
+}
+
+.message__body--other {
+  @extend .message__body;
+}
+
+.message__body--user {
+  @extend .message__body;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
+  flex-flow: column wrap;
+}

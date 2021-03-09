@@ -1,0 +1,50 @@
+$contactContainerColor : #ebebeb;
+$contactContainerHoverColor : #c4c4c4;
+
+aside {
+  overflow-y: scroll;
+  height: 100%;
+
+  .contact__container {
+    padding: 1em;
+    border-bottom: 1px black solid;
+    background: $contactContainerColor;
+
+    &:hover {
+      background: $contactContainerHoverColor;
+      cursor: pointer;
+    }
+
+    .contact__people {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+
+      .contact__image {
+        float: left;
+        width: 70px;
+        height: 70px;
+        left: -50px;
+      }
+
+      .contact__credentials {
+        margin-left: 1em;
+        h5 {
+          font-size: 15px;
+          margin: 0, 0, 8px, 0;
+
+          span {
+            float: right;
+          }
+        }
+      }
+    }
+
+  }
+
+  .contact__container--active {
+    @extend .contact__container;
+    background: $contactContainerHoverColor;
+
+  }
+}

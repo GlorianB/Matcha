@@ -1,0 +1,20 @@
+.card__carousel--image {
+  height: 286px;
+  width: 286px;
+}
+
+.ProfileCard img:hover {
+  cursor: pointer;
+}
+
+.ProfileCard__like {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+.like__icon:hover {
+  cursor: pointer;
+  color: #C0392B;
+}
